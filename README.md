@@ -1,16 +1,16 @@
-\# SELECT parte 3
+# SELECT parte 3
 
 
 
-\### Agrupando 
+### Agrupando 
 
-\*\*GROUP BY\*\*
+**GROUP BY**
 
 ```
 
-select \* from cursos;
+select * from cursos;
 
-select \* from cursos order by carga;
+select * from cursos order by carga;
 
 select carga from cursos group by carga;
 
@@ -18,7 +18,7 @@ select carga from cursos group by carga;
 
 
 
-\### Para mostrar a quantidade dos grupos: 
+### Para mostrar a quantidade dos grupos: 
 
 ```
 
@@ -26,11 +26,11 @@ select carga, count(nome) from cursos group by carga;
 
 ```
 
-\#### Ex 2
+#### Ex 2
 
 ```
 
-select \* from cursos; 
+select * from cursos; 
 
 select totaulas from cursos;
 
@@ -46,25 +46,22 @@ Desta forma é possível ver o número total de aulas e também a quantidade de 
 
 ```
 
-select totaulas, count(\*) from cursos group by totaulas 
+select totaulas, count(*) from cursos group by totaulas 
 
 order by totaulas; 
 
 ```
 
 Tem 4 cursos com o total de aulas igual a 30 por exemplo. Se for selecionar, mostrará o resultado: 
+```
+select * from cursos where totaulas = 30;
+````
 
-select \* from cursos where totaulas = 30;
-
-
-
-
-
-\### Também é possível selecionar com WHERE:
+### Também é possível selecionar com WHERE:
 
 ```
 
-select \* from cursos where totaulas > 20;
+select * from cursos where totaulas > 20;
 
 ```
 
@@ -72,13 +69,13 @@ Para selecionar apenas os que tem 30 aulas
 
 ```
 
-select \* from cursos where totaulas = 30;
+select * from cursos where totaulas = 30;
 
 ```
 
 
 
-\#### Para agrupá-los:
+#### Para agrupá-los:
 
 ```
 
@@ -86,23 +83,23 @@ select carga from cursos where totaulas = 30 group by carga;
 
 select carga, count(nome) from cursos where totaulas = 30 group by carga; # para querer saber quantos
 
-select \* from cursos where totaulas = 30;
+select * from cursos where totaulas = 30;
 
 ````
 
 
 
-\### Agrupando e agregando
+### Agrupando e agregando
 
-\*\*HAVING\*\*
+**HAVING**
 
 ```
 
-select ano, count(\*) from cursos 
+select ano, count(*) from cursos 
 
 group by ano
 
-order by count(\*);
+order by count(*);
 
 ```
 
@@ -112,13 +109,13 @@ Procurando o ano que tem 4 ou mais cursos:
 
 ```
 
-select ano, count(\*) from cursos 
+select ano, count(*) from cursos 
 
 group by ano
 
 having count(ano) >= 4
 
-order by count(\*);
+order by count(*);
 
 ```
 
@@ -126,7 +123,7 @@ dentro do having só pode trabalhar com o campo que foi agrupado.
 
 ```
 
-select ano, count(\*) from cursos 
+select ano, count(*) from cursos 
 
 group by ano
 
@@ -146,13 +143,13 @@ Se quiser agrupar por ano, que tenha o ano maior que 2013.
 
 ```
 
-select \* from cursos; 
+select * from cursos; 
 
 ```
 
 ```
 
-select ano, count(\*) from cursos # Seleciona os anos da tabela de cursos
+select ano, count(*) from cursos # Seleciona os anos da tabela de cursos
 
 where totaulas > 30 # onde o total de aulas seja acima de 30 
 
@@ -163,12 +160,9 @@ having ano >= 2013 # dentro desse agrupado so vai mostrar quem tem ano acima de 
 order by ano; # orderno por este total
 
 ```
+______
 
-\_\_\_\_\_
-
-\_\_\_\_\_
-
-\### MÉDIA
+### MÉDIA
 
 ```
 
@@ -178,7 +172,7 @@ select avg(carga) from cursos; # media
 
 ``` 
 
-select \* from cursos
+select * from cursos
 
 where ano > 2015;
 
@@ -186,7 +180,7 @@ where ano > 2015;
 
 ```
 
-select carga, count(\*) from  cursos
+select carga, count(*) from  cursos
 
 where ano > 2016
 
