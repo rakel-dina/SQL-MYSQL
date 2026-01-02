@@ -1,17 +1,26 @@
 
-Resumos do curso introdutório de SQL com MYSQL do Curso em Vídeo com Gustavo Guanabara. 
+### 📕💻 Resumos do curso introdutório de SQL com MYSQL do Curso em Vídeo com Gustavo Guanabara. 
+___
 
-- Criação do Primeiro Banco de Dados -Comandos CREATE DATA BASE e CREATE TABLE
+- Criação do Primeiro Banco de Dados - Comandos CREATE DATA BASE e CREATE TABLE
 - Melhorando a Estrutura do Banco de Dados
 - Inserindo Dados na Tabela - INSERT INTO
 - Alterando a Estrutura da Tabela - ALTER TABLE e DROP TABLE
 - Manipulando linhas (UPDATE, DELETE e TRUNCATE)
-- SELECT parte I, II e III
-- Chaves Estrangeiras e JOIN
+- SELECT parte I
+
+  parte II
+
+  parte III [🔗](https://github.com/rakel-dina/SQL-MYSQL/blob/main/12-Select%20parte%203.pdf)
+
+- Chaves Estrangeiras e JOIN [🔗](https://github.com/rakel-dina/SQL-MYSQL/blob/main/13-Chaves%20estrangeiras%20e%20join.pdf)
 - INNER JOIN com várias tabelas
 
-https://www.cursoemvideo.com/curso/mysql/
+___
 
+🔍[Curso em Vídeo](https://www.cursoemvideo.com/curso/mysql/)
+
+⬇️ [Dump da tabela](https://github.com/rakel-dina/SQL-MYSQL/blob/main/Dump_CeV.sql)
 
 
 
