@@ -14,7 +14,7 @@ ___
   parte III [🔗](https://github.com/rakel-dina/SQL-MYSQL/blob/main/12-Select%20parte%203.pdf)
 
 - Chaves Estrangeiras e JOIN [🔗](https://github.com/rakel-dina/SQL-MYSQL/blob/main/13-Chaves%20estrangeiras%20e%20join.pdf)
-- INNER JOIN com várias tabelas
+- INNER JOIN com várias tabelas [🔗](https://github.com/rakel-dina/SQL-MYSQL/blob/main/14-inner%20join%20com%20v%C3%A1rias%20tabelas.pdf)
 
 ___
 
